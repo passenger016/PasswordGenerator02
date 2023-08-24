@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>Password Generator</h2>
+        <div class="output">
+            <div class="output-box">
+                <input type="text" disabled>
+                <button class="copy">Copy</button>
+            </div>
+            
+            <div class="pass-length">
+                <label class="title">Password length</label>
+                <input type="range" min="5" max="50" value="10" step="1">
+                <!--For the slider to select password length-->
+                <span>10</span>
+            </div>
+        </div>
+        <div class="setting">
+            <label>Password Settings</label>
+
+            <ul class="options">
+                <li class="option">
+                    <input type="checkbox" id="lowercase" checked>
+                    <label for="lowercase">Lowercase (a-z)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="uppercase">
+                    <label for="uppercase">Uppercase (A-Z)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="numbers">
+                    <label for="numbers">Numbers (0-9)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="symbols">
+                    <label for="symbols">Symbols (!-$#)</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="dublicate">
+                    <label for="dublicate">Exclude Dublicate</label>
+                </li>
+                <li class="option">
+                    <input type="checkbox" id="space">
+                    <label for="space">Include Space</label>
+                </li>
+            </ul>
+
+        </div>
+        <button class="generate-btn">Generate Password</button>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
